@@ -1,0 +1,100 @@
+@media(max-width: 1139px){
+    .col__item {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    .ser__cards-sub-main {
+        grid-column: 1 / 2;
+    }
+}
+@media(max-width: 1100px) {
+    .main > .container:first-child {
+        max-width: 750px;
+    }
+    .section-films__item {
+        justify-content: space-evenly;
+    }
+    .section-films__card {
+        margin: 15px;
+    }
+    .title {
+        margin: 0 auto 50px;
+    }
+}
+@media(max-width: 959px) {
+    .intro {
+        align-items: center;
+    }
+    .intro__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col__item-card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+    .trailer__video {
+        position: static;
+    }
+    .trailer_pos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .trailer::before {
+    background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 60%, rgba(255, 255, 255, 0) 100.72%);
+    }
+    .trailer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 630px) {
+    .header__list {
+        display: none;
+    }
+    .header__nav {
+        justify-content: center;
+    }
+    .intro__title {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .intro__btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__btn > a:first-child {
+        margin-bottom: 15px;
+    }
+    .trailer::before {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 70%, rgba(255, 255, 255, 0) 100.72%);
+    }
+    .ser__cards-desc {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+    .footer__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media(max-width: 320px) {
+    .trailer::before {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 80%, rgba(255, 255, 255, 0) 100.72%);
+    }
+    .trailer__desc {
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+    .footer__content {
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer__span {
+        text-align: center;
+    }
+}
